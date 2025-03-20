@@ -1,0 +1,13 @@
+loguru
+pydantic
+pydantic-settings
+google-cloud
+google-cloud-storage
+google-cloud-bigquery
+google-cloud-secret-manager
+pymysql
+pyyaml
+flask
+gunicorn
+text_unidecode
+pandas

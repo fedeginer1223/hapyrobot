@@ -1,0 +1,76 @@
+2025-03-03 20:10:27.768 | INFO     | config.logger:configure_logging:47 - Logger configurado correctamente
+2025-03-03 20:10:28.412 | INFO     | __main__:setup_db:22 - Inicializando base de datos...
+2025-03-03 20:10:28.413 | INFO     | services.starrocks:execute_query:27 - Executing query: SHOW DATABASES LIKE 'recomendaciones_db'...
+2025-03-03 20:10:28.425 | INFO     | services.starrocks:execute_query:49 - Database connection established successfully.
+2025-03-03 20:10:28.431 | INFO     | services.starrocks:execute_query:67 - Query executed successfully, 1 rows fetched.
+2025-03-03 20:10:28.432 | INFO     | __main__:setup_db:26 - Base de datos ya existe
+2025-03-03 20:10:28.433 | INFO     | services.starrocks:execute_query:27 - Executing query: SHOW TABLES LIKE 'predictions_products'...
+2025-03-03 20:10:28.437 | INFO     | services.starrocks:execute_query:49 - Database connection established successfully.
+2025-03-03 20:10:28.441 | INFO     | services.starrocks:execute_query:67 - Query executed successfully, 1 rows fetched.
+2025-03-03 20:10:28.441 | INFO     | __main__:load_all_tables:74 - Tabla predictions_products ya existe
+2025-03-03 20:10:28.442 | INFO     | services.starrocks:execute_query:27 - Executing query: SHOW TABLES LIKE 'predictions_categories'...
+2025-03-03 20:10:28.445 | INFO     | services.starrocks:execute_query:49 - Database connection established successfully.
+2025-03-03 20:10:28.447 | INFO     | services.starrocks:execute_query:67 - Query executed successfully, 1 rows fetched.
+2025-03-03 20:10:28.447 | INFO     | __main__:load_all_tables:74 - Tabla predictions_categories ya existe
+2025-03-03 20:10:28.447 | INFO     | services.starrocks:execute_query:27 - Executing query: SHOW TABLES LIKE 'predictions_associations'...
+2025-03-03 20:10:28.451 | INFO     | services.starrocks:execute_query:49 - Database connection established successfully.
+2025-03-03 20:10:28.452 | INFO     | services.starrocks:execute_query:67 - Query executed successfully, 1 rows fetched.
+2025-03-03 20:10:28.453 | INFO     | __main__:load_all_tables:74 - Tabla predictions_associations ya existe
+2025-03-03 20:10:28.453 | INFO     | services.starrocks:execute_query:27 - Executing query: SHOW TABLES LIKE 'products_categories'...
+2025-03-03 20:10:28.457 | INFO     | services.starrocks:execute_query:49 - Database connection established successfully.
+2025-03-03 20:10:28.459 | INFO     | services.starrocks:execute_query:67 - Query executed successfully, 1 rows fetched.
+2025-03-03 20:10:28.459 | INFO     | __main__:load_all_tables:74 - Tabla products_categories ya existe
+2025-03-03 20:10:28.459 | INFO     | __main__:setup_db:43 - Base de datos inicializada correctamente
+2025-03-03 20:10:29.673 | INFO     | config.logger:configure_logging:47 - Logger configurado correctamente
+2025-03-03 20:10:29.706 | INFO     | api.run:<module>:16 - ################ API Iniciada ################
+2025-03-03 20:11:56.008 | INFO     | config.logger:configure_logging:47 - Logger configurado correctamente
+2025-03-03 20:11:56.326 | INFO     | __main__:setup_db:22 - Inicializando base de datos...
+2025-03-03 20:11:56.327 | INFO     | services.starrocks:execute_query:27 - Executing query: SHOW DATABASES LIKE 'recomendaciones_db'...
+2025-03-03 20:11:56.338 | INFO     | services.starrocks:execute_query:49 - Database connection established successfully.
+2025-03-03 20:11:56.346 | INFO     | services.starrocks:execute_query:67 - Query executed successfully, 1 rows fetched.
+2025-03-03 20:11:56.347 | INFO     | __main__:setup_db:26 - Base de datos ya existe
+2025-03-03 20:11:56.348 | INFO     | services.starrocks:execute_query:27 - Executing query: SHOW TABLES LIKE 'predictions_products'...
+2025-03-03 20:11:56.353 | INFO     | services.starrocks:execute_query:49 - Database connection established successfully.
+2025-03-03 20:11:56.357 | INFO     | services.starrocks:execute_query:67 - Query executed successfully, 1 rows fetched.
+2025-03-03 20:11:56.358 | INFO     | __main__:load_all_tables:74 - Tabla predictions_products ya existe
+2025-03-03 20:11:56.358 | INFO     | services.starrocks:execute_query:27 - Executing query: SHOW TABLES LIKE 'predictions_categories'...
+2025-03-03 20:11:56.362 | INFO     | services.starrocks:execute_query:49 - Database connection established successfully.
+2025-03-03 20:11:56.364 | INFO     | services.starrocks:execute_query:67 - Query executed successfully, 1 rows fetched.
+2025-03-03 20:11:56.364 | INFO     | __main__:load_all_tables:74 - Tabla predictions_categories ya existe
+2025-03-03 20:11:56.365 | INFO     | services.starrocks:execute_query:27 - Executing query: SHOW TABLES LIKE 'predictions_associations'...
+2025-03-03 20:11:56.369 | INFO     | services.starrocks:execute_query:49 - Database connection established successfully.
+2025-03-03 20:11:56.371 | INFO     | services.starrocks:execute_query:67 - Query executed successfully, 1 rows fetched.
+2025-03-03 20:11:56.371 | INFO     | __main__:load_all_tables:74 - Tabla predictions_associations ya existe
+2025-03-03 20:11:56.372 | INFO     | services.starrocks:execute_query:27 - Executing query: SHOW TABLES LIKE 'products_categories'...
+2025-03-03 20:11:56.376 | INFO     | services.starrocks:execute_query:49 - Database connection established successfully.
+2025-03-03 20:11:56.378 | INFO     | services.starrocks:execute_query:67 - Query executed successfully, 1 rows fetched.
+2025-03-03 20:11:56.379 | INFO     | __main__:load_all_tables:74 - Tabla products_categories ya existe
+2025-03-03 20:11:56.379 | INFO     | __main__:setup_db:43 - Base de datos inicializada correctamente
+2025-03-03 20:11:57.468 | INFO     | config.logger:configure_logging:47 - Logger configurado correctamente
+2025-03-03 20:11:57.505 | INFO     | api.run:<module>:16 - ################ API Iniciada ################
+2025-03-03 20:12:29.688 | DEBUG    | api.routes.recomendaciones:get_product_recommendations:25 - Request parameters: {'idcustomer': '138', 'start_date': '2025-03-01', 'end_date': '2025-03-31'}
+2025-03-03 20:12:29.688 | INFO     | api.routes.recomendaciones:get_product_recommendations:28 - Request to get product recommendations. Validating params...
+2025-03-03 20:12:29.695 | INFO     | api.routes.recomendaciones:get_product_recommendations:39 - Params validated successfully.
+2025-03-03 20:12:29.695 | INFO     | api.routes.recomendaciones:get_product_recommendations:41 - Fetching product recommendations...
+2025-03-03 20:12:29.696 | INFO     | queries.query_loader:query_starrocks:33 - Ejecutando query recomendaciones_productos_combos...
+2025-03-03 20:12:29.696 | INFO     | services.starrocks:execute_query:27 - Executing query: SET @date_start = '2025-03-01';
+SET @date_end = '2025-03-31';
+SET @client_id = 138;
+
+-- Filtrar por ...
+2025-03-03 20:12:29.701 | INFO     | services.starrocks:execute_query:49 - Database connection established successfully.
+2025-03-03 20:12:30.444 | INFO     | services.starrocks:execute_query:67 - Query executed successfully, 200 rows fetched.
+2025-03-03 20:12:30.445 | INFO     | api.routes.recomendaciones:get_product_recommendations:48 - Product recommendations fetched successfully.
+2025-03-03 20:12:50.597 | DEBUG    | api.routes.recomendaciones:get_product_recommendations:25 - Request parameters: {'idcustomer': '138', 'start_date': '2025-03-04', 'end_date': '2025-03-31'}
+2025-03-03 20:12:50.598 | INFO     | api.routes.recomendaciones:get_product_recommendations:28 - Request to get product recommendations. Validating params...
+2025-03-03 20:12:50.599 | INFO     | api.routes.recomendaciones:get_product_recommendations:39 - Params validated successfully.
+2025-03-03 20:12:50.599 | INFO     | api.routes.recomendaciones:get_product_recommendations:41 - Fetching product recommendations...
+2025-03-03 20:12:50.600 | INFO     | queries.query_loader:query_starrocks:33 - Ejecutando query recomendaciones_productos_combos...
+2025-03-03 20:12:50.600 | INFO     | services.starrocks:execute_query:27 - Executing query: SET @date_start = '2025-03-04';
+SET @date_end = '2025-03-31';
+SET @client_id = 138;
+
+-- Filtrar por ...
+2025-03-03 20:12:50.605 | INFO     | services.starrocks:execute_query:49 - Database connection established successfully.
+2025-03-03 20:12:50.941 | INFO     | services.starrocks:execute_query:67 - Query executed successfully, 200 rows fetched.
+2025-03-03 20:12:50.942 | INFO     | api.routes.recomendaciones:get_product_recommendations:48 - Product recommendations fetched successfully.

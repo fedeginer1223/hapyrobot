@@ -39,20 +39,15 @@ def get_load_by_ref(ref_number):
     
     logger.info('Params and Token validated successfully.')
 
+    logger.info('Fetching load data...')
+
+    load_data=read_csv(r"data\loads_data.csv", sep=";")
+
     try:
-        logger.info('Fetching product recommendations...')
-
-        # Call starrocks to return the query
-        # results = query_starrocks(
-        #     query_name='recomendaciones_productos_combos_filtered_by_categories',
-        #     params=params
-        # )
-
-        load_data=read_csv(r"data/loads_data.csv", sep=";")
         results=load_data[load_data["reference_number"]==ref_number]
-        
-        logger.info('Product recommendations fetched successfully.')
-        return results.to_dict(orient="records")[0]
+        load_data_referenced = results.to_dict(orient="records")[0]
+        logger.info('Load data fetched successfully.')
+        return load_data_referenced
+
     except Exception as e:
-        logger.error(f"Error fetching recommendations: {e}")
-        abort(500, description="Internal Server Error")
+        abort(404, description=f'The referenced value has not been found')

@@ -1,7 +1,4 @@
-from datetime import datetime
-import re
-
-# from .bigquery import check_api_token_gcs_secret
+from .bigquery import check_api_token_gcs_secret
 
 def validate_token(parameters: dict):
     """
@@ -28,6 +25,6 @@ def validate_token(parameters: dict):
             elif len(value) == 0:
                 raise ValueError('Invalid token format. Length 0')
             
-            # ## CHECKEAR API TOKEN
-            # if not check_api_token_gcs_secret(value):
-            #     raise ValueError('Invalid API token')
+            ## CHECKEAR API TOKEN
+            if not check_api_token_gcs_secret(value):
+                raise ValueError('Invalid API token')

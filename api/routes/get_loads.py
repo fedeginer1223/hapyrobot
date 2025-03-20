@@ -41,7 +41,7 @@ def get_load_by_ref(ref_number):
 
     logger.info('Fetching load data...')
 
-    load_data=read_csv(r"data\loads_data.csv", sep=";")
+    load_data=read_csv(r"data/loads_data.csv", sep=";")
 
     try:
         results=load_data[load_data["reference_number"]==ref_number]

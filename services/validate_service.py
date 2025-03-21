@@ -1,6 +1,6 @@
 from .bigquery import check_api_token_gcs_secret
 
-def validate_token(parameters: dict):
+def validate_params(parameters: dict):
     """
     Validates the input parameters based on specific criteria.
     Args:
@@ -11,12 +11,23 @@ def validate_token(parameters: dict):
         ValueError: If any of the parameters do not meet the required format.
     """
 
+    # If it should include the reference_number parameter
+    if "reference_number" not in parameters.keys():
+        raise ValueError('Reference number is required.')
+    
     # If it should include the token parameter
     if 'token' not in parameters.keys():
         raise ValueError('Token is required for this service')
 
     # Check token
     for param, value in parameters.items():
+
+        if param == 'reference_number':
+
+            if not type(value) == str:
+                raise ValueError('Invalid reference_number format. Not a string')
+            elif len(value) == 0:
+                raise ValueError('Invalid reference_number format. Length 0')
         
         if param == 'token':
 

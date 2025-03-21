@@ -1,7 +1,7 @@
-from flask import Blueprint, request, jsonify, abort
+from flask import Blueprint, request, abort
 from loguru import logger
 
-from services import validate_token
+from services import validate_params
 from pandas import read_csv
 
 ## Name of the route
@@ -12,8 +12,8 @@ loads_bp = Blueprint(ROUTE_NAME, __name__)
 
 ### Endpoints
 # getting load information
-@loads_bp.route('/<string:ref_number>', methods=['GET'])
-def get_load_by_ref(ref_number):
+@loads_bp.route('', methods=['GET'])
+def get_load_by_ref():
     """
     Retrieves load details given the landing post reference number.
     """
@@ -22,15 +22,9 @@ def get_load_by_ref(ref_number):
 
     # Validate input parameters
     logger.info('Request to get load details. Validating params...')
-
-    if not ref_number:
-        abort(400, description="Reference number is required.")
     
-    # Validate token
-    logger.info('Checking token')
-
     try:
-        validate_token(
+        validate_params(
             params
         )
     except ValueError as e:
@@ -44,7 +38,7 @@ def get_load_by_ref(ref_number):
     load_data=read_csv(r"data/loads_data.csv", sep=";")
 
     try:
-        results=load_data[load_data["reference_number"]==ref_number]
+        results=load_data[load_data["reference_number"]==params.get("reference_number")]
         load_data_referenced = results.to_dict(orient="records")[0]
         logger.info('Load data fetched successfully.')
         return load_data_referenced

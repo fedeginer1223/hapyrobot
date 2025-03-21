@@ -11,3 +11,4 @@ flask
 gunicorn
 text_unidecode
 pandas
+requests
